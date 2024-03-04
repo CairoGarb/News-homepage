@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="images/favicon-32x32.png">
+  <link rel="stylesheet" href="style.css" >
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" integrity="sha512-DTOQO9RWCH3ppGqcWaEA1BIZOC6xxalwEsw9c2QQeAIftl+Vegovlnee1c9QX4TctnWMn13TZye+giMm8e2LwA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+  <title>Frontend Mentor | News homepage</title>
+
+</head>
+<body>
+  <!-- Header start -->
+  <header id="header">
+    <nav class="nav">
+      <figure class="logo">
+        <img src="images/logo.svg" alt="logo">
+      </figure>
+      <div class="x-menu hidden">
+        <i class="fa-solid fa-x" aria-label="close menu"></i>
+      </div>
+      <ul id="menu-list">
+        <li>Home</li>
+        <li>New</li>
+        <li>Popular</li>
+        <li>Trending</li>
+        <li>Categories</li>
+      </ul>
+      <div class="bar-menu" onclick="showMenu()"><i class="fa-solid fa-bars" aria-label="open menu"></i></div>
+    </nav>
+  </header>
+  <!-- Header end -->
+
+  <!-- Main -->
+  <main>
+    <div class="container">
+      <!-- Main image -->
+      <div class="main-img"></div>
+
+      <!-- Bright section start -->
+      <div class="bright">
+        <h1>The Bright Future of Web 3.0?</h1>
+      </div>
+      <!-- Bright section end -->
+
+      <!-- Dive section start -->
+      <div class="dive">
+        <p>We dive into the next evolution of the web that claims to put the power of the platforms back into the hands of the people. 
+          But is it really fulfilling its promise?</p>
+        <button>Read More</button>
+      </div>
+      <!-- Dive section end -->
+
+      <!-- New section start -->
+      <div class="new">
+        <h2>New</h2>
+        <div class="new-cars">
+          <h3>Hydrogen VS Electric Cars</h3>
+          <p>Will hydrogen-fueled cars ever catch up to EVs?</p>
+        </div>
+        <div class="new-AI">
+          <h3>The Downsides of AI Artistry</h3>
+          <p>What are the possible adverse effects of on-demand AI image generation?
+          </p>
+        </div>
+        <div class="new-VC">
+          <h3>Is VC Funding Drying Up?</h3>
+          <p>Private funding by VC firms is down 50% YOY. We take a look at what that means.
+          </p>
+        </div>
+      </div>
+      <!-- New section end -->
+
+      <!-- Articles section start -->
+      <div class="retroPC">
+        <figure class="rp-img">
+          <img src="images/image-retro-pcs.jpg" alt="retro pc image">
+        </figure>
+        <div class="rp-text">
+          <h4>01</h4>
+          <h5>Reviving Retro PCs</h5>
+          <p>What happens when old PCs are given modern upgrades?</p>
+        </div>
+      </div>
+      <div class="laptops">
+        <figure class="lt-img">
+          <img src="images/image-top-laptops.jpg" alt="top laptop image">
+        </figure>
+        <div class="lt-text">
+          <h4>02</h4>
+          <h5>Top 10 Laptops of 2022</h5>
+          <p>Our best picks for various needs and budgets.</p>
+        </div>
+      </div>
+      <div class="gaming">
+        <figure class="game-img">
+          <img src="images/image-gaming-growth.jpg" alt="gaming growth image">
+        </figure>
+        <div class="game-text">
+          <h4>03</h4>
+          <h5>The Growth of Gaming</h5>
+          <p>How the pandemic has sparked fresh opportunities.</p>
+        </div>
+      </div>
+    </div>
+    <!-- Articles section end -->
+    <!-- Menu Bar -->
+  </main>
+
+  <!-- Footer -->
+  <footer class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="https://www.frontendmentor.io/profile/CairoGarb" target="_blank">Cairo Garbelotto</a>.
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

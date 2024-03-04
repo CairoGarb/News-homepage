@@ -1,0 +1,333 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@100..900&display=swap');
+
+:root {
+    /* Primary colors */
+    --Soft-orange: #e9ab53;
+    --Soft-red: #f15e50;
+    /* Neutral colors */
+    --Off-white: #fffdfa;
+    --Grayish-blue: #c5c6ce;
+    --Dark-grayish-blue: #5d5f79;
+    --Very-dark-blue: #00001a;
+}
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    min-height: 100vh;
+    min-width: 1440px;
+    max-width: 100%;
+    font-size: 15px;
+    font-family: "Inter", sans-serif;
+    background-color: var(--Off-white);
+}
+figure, img {
+    width: 100%;
+    height: 100%;
+    display: block;
+}
+.hidden {
+    display: none;
+}
+
+/* Header/Nav */
+.logo {
+    width: 5%;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 10rem 0 10rem;
+    background-color: var(--Off-white);
+    align-items: center;
+}
+.nav ul {
+    display: flex;
+    gap: 20px;
+    list-style-type: none;
+    color: var(--Dark-grayish-blue)
+}
+.nav ul li:hover {
+    cursor: pointer;
+    transition: .2s;
+    scale: 1.2;
+    color: var(--Soft-orange);
+}
+.bar-menu {
+    display: none;
+}
+/* Header/Nav */
+
+/* Container */
+.container {
+    display: grid;
+    padding: 2rem 10rem 2rem 10rem;
+    grid-template-columns: 2fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    gap: 20px;
+}
+/* Container */
+
+.main-img {
+    width: auto;
+    height: 300px;
+    background-image: url(images/image-web-3-desktop.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    grid-column: 1/4;
+}
+
+/* Bright section */
+.bright {
+    background-color: var(--Off-white);
+    grid-column: 1/2;
+}
+.bright h1 {
+    font-size: 78px;
+    color: var(--Very-dark-blue);
+}
+/* Bright section */
+
+/* Dive section */
+.dive {
+    background-color: var(--Off-white);
+    grid-column: 2/4;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.dive p {
+    color: var(--Dark-grayish-blue);
+    line-height: 30px;
+    font-size: 22px;
+}
+.dive button {
+    background-color: var(--Soft-red);
+    border: none;
+    padding: 20px 0;
+    width: 50%;
+    color: var(--Off-white);
+    font-weight: 600;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+}
+.dive button:hover {
+    cursor: pointer;
+    transition: .2s;
+    background-color: var(--Very-dark-blue);
+}
+/* Dive section */
+
+/* New section */
+.new {
+    background-color: var(--Very-dark-blue);
+    grid-column: 4/6;
+    grid-row: 1/3;
+    padding: 20px;
+}
+.new h2 {
+    color: var(--Soft-orange);
+    font-size: 42px;
+}
+.new-cars, .new-AI, .new-VC {
+    padding-top: 25px;
+}
+.new-cars, .new-AI {
+    border-bottom: 1px solid var(--Dark-grayish-blue);
+}
+.new-cars h3, .new-AI h3, .new-VC h3 {
+    color: var(--Off-white);
+    padding-bottom: 5px;
+    font-size: 28px;
+}
+.new-cars h3:hover, .new-AI h3:hover, .new-VC h3:hover {
+    color: var(--Soft-orange);
+    cursor: pointer;
+    transition: .2s;
+}
+.new-cars p, .new-AI p, .new-VC p {
+    color: var(--Grayish-blue);
+    padding-bottom: 30px;
+    font-size: 20px;
+    line-height: 30px;
+}
+
+/* Articles section */
+.retroPC {
+    grid-column: 1/2;
+}
+.laptops {
+    grid-column: 2/4;
+}
+.gaming {
+    grid-column: 4/6;
+}
+.retroPC, .laptops, .gaming {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    background-color: var(--Off-white);
+    height: 150px;
+}
+.rp-img, .lt-img, .game-img{
+    max-width: 125px;
+}
+.rp-text, .lt-text, .game-text {
+    display: flex;
+    flex-direction: column;
+}
+.rp-text h4, .lt-text h4, .game-text h4 {
+    color: var(--Grayish-blue);
+    font-size: 32px;
+}
+.rp-text h5, .lt-text h5, .game-text h5 {
+    color: var(--Very-dark-blue);
+    font-size: 20px;
+    font-weight: 700;
+    padding-bottom: 10px;
+}
+.rp-text h5:hover, .lt-text h5:hover, .game-text h5:hover {
+    color: var(--Soft-red);
+    cursor: pointer;
+    transition: .2s;
+}
+.rp-text p, .lt-text p, .game-text p {
+    color: var(--Dark-grayish-blue);
+    font-size: 18px;
+    font-weight: 400;
+}
+/* Articles section */
+
+/* Footer */
+.attribution { font-size: 11px; text-align: center;}
+.attribution a { color: var(--Soft-red); }
+/* Footer */
+
+/* Responsiveness */
+/* Smaller laptops */
+@media screen and (min-width: 1101px) and (max-width: 1439px) {
+    body {
+        min-width: 1101px;
+        max-width: 1439px;
+    }
+}
+@media screen and (min-width: 901px) and (max-width: 1100px) {
+    body {
+        min-width: 901px;
+        max-width: 1100px;
+    }
+    .bright h1 {
+        font-size: 52px;
+    }
+    .dive p {
+        font-size: 16px;
+    }
+    .new h2 {
+        color: var(--Soft-orange);
+        font-size: 32px;
+    }
+    .new-cars, .new-AI, .new-VC {
+        padding-top: 15px;
+    }
+    .new-cars, .new-AI {
+        border-bottom: 1px solid var(--Dark-grayish-blue);
+    }
+    .new-cars h3, .new-AI h3, .new-VC h3 {
+        color: var(--Off-white);
+        padding-bottom: 5px;
+        font-size: 20px;
+    }
+    .new-cars h3:hover, .new-AI h3:hover, .new-VC h3:hover {
+        color: var(--Soft-orange);
+        cursor: pointer;
+        transition: .2s;
+    }
+    .new-cars p, .new-AI p, .new-VC p {
+        color: var(--Grayish-blue);
+        padding-bottom: 30px;
+        font-size: 14px;
+        line-height: 20px;
+    }
+    .retroPC, .laptops, .gaming {
+        height: 150px;
+    }
+    .rp-text h4, .lt-text h4, .game-text h4 {
+        font-size: 22px;
+    }
+    .rp-text h5, .lt-text h5, .game-text h5 {
+        font-size: 14px;
+    }
+    .rp-text p, .lt-text p, .game-text p {
+        font-size: 12px;
+    }
+    .rp-img, .lt-img, .game-img{
+        max-width: 100px;
+    }
+}
+
+/* Tablets */
+@media screen and (min-width: 300px) and (max-width: 900px) {
+    body {
+        min-width: 300px;
+        max-width: 900px;
+    }
+    .container {
+        display: flex;
+        flex-direction: column;
+        padding: 5px 10px;
+    }
+    .nav {
+        padding: 5px 20px;
+    }
+    .nav ul {
+        position: absolute;
+        flex-direction: column;
+        background-color: var(--Off-white);
+        right: 0;
+        top: 0;
+        z-index: 1;
+        padding: 100px 30% 400px 15px;
+        color: var(--Very-dark-blue);
+        display: none;
+    }
+    .bar-menu {
+        display: flex;
+        scale: 2;
+    }
+    .hidden {
+        display: block;
+        width: 30px;
+        height: 30px;
+        position: absolute;
+        right: 0;
+        z-index: 2;
+        top: 1.2%;
+        display: none;
+    }
+    .hidden i {
+        scale: 2;
+    }
+    .hidden i:hover {
+        cursor: pointer;
+        transition: .2s;
+        color: var(--Soft-orange);  
+    }
+    .bar-menu i:hover {
+        cursor: pointer;
+        transition: .2s;
+        color: var(--Soft-orange);
+    }
+    .logo {
+        width: 40px;
+    }
+    .main-img {
+        width: auto;
+        height: 300px;
+        background-image: url(images/image-web-3-mobile.jpg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        grid-column: 1/4;
+    }
+}
